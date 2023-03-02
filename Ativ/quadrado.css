@@ -1,0 +1,22 @@
+.quadrado{
+	width: 13vh;
+	height: 10wh;
+	background-color: blue;
+	position: absolute;
+	display: none;
+
+}
+
+
+#drop2{
+	height: 23vw;
+	width: 70vh;
+	position: absolute;
+	background-color: white;
+	margin-top: 60vh;
+	overflow: hidden;
+	display: none;
+}
+.botaoquadrado{
+	padding-bottom: 90vh;
+}

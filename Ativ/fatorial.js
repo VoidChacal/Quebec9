@@ -7,6 +7,8 @@ function fatorial(){
 			sona = soma*valor;
 			console.log(valor);
 			valor--;
+			alert("Valor fatorial:" +valor)
+
 		}
 		
 	}

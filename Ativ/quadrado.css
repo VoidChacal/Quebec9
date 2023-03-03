@@ -1,9 +1,9 @@
 .quadrado{
 	width: 13vh;
-	height: 10wh;
+	height: 10vw;
 	background-color: blue;
 	position: absolute;
-	display: none;
+	display: flex;
 
 }
 
@@ -18,5 +18,6 @@
 	display: none;
 }
 .botaoquadrado{
-	padding-bottom: 90vh;
+	top: 13%;
+    position: absolute;
 }

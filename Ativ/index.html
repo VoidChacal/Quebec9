@@ -9,8 +9,20 @@
 	 <script src="quadrado.js"></script>
      <script src="calculadora.js"></script>
      <script src="fatorial.js"></script>
+    <link rel="stylesheet" type="text/css" href="fatorial.css">
 	 <link rel="stylesheet" type="text/css" href="quadrado.css">
-	
+   <style type="text/css">
+     .cabeca{
+      background-color: #836FFF;
+      bottom: 89%;
+      height: 11vh;
+      width: 100%;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: flex; 
+     }
+   </style>
 	 <script type="text/javascript">
 		function drop(bt, id, fun){
     var res = 0;
@@ -31,7 +43,10 @@
 </head>
 <body>
     <div class="corpo">
-	<a onclick="drop(this, '#drop1', 0)" class="botaoquadrado" style="display: flex;" id="entra">Calculadora</a>
+      <header class="cabeca">
+    <p>Atividades de javascript</p>
+  </header>
+	<a onclick="drop(this, '#drop1', 0)" class="botaoquadrado" id="entra">Calculadora</a>
 <div id="drop1" style="display:none;" class="calculadoraArea">
 	<div class="calculadora">
  <center>
@@ -89,9 +104,11 @@
   </div>
 </div>
 <div class="fatorial">
-      <input type="number" id="barrafatorial">
-      <input type="submit" value="enviar" onclick="fatorial()">
+  <p style="bottom: 41%; position: absolute;">Valor Fatorial</p>
+      <input type="number" id="barrafatorial" class="barrafatorial">
+      <input type="submit" value="enviar" onclick="fatorial()" class="botaofatorial">
   </div>
 </div>
+
 </body>
 </html>

@@ -21,6 +21,7 @@
       justify-content: center;
       align-items: center;
       display: flex; 
+      font-size: 6vh;
      }
    </style>
 	 <script type="text/javascript">
@@ -98,13 +99,16 @@
   </table>
   </div>
   </div>
-  <a tyle="display: flex;" id="quadrado2"></a>
-  <div id="drop2">
-  	<div id="quadrado" style="width: 20vh; height: 20vw; background-color: blue; position: absolute;">
+  <a style="display: flex;" id="quadrado2" onclick="dropquadrado(this,'#drop2',0)">Mover Div</a>
+  <p class="quadtext">Use as setas do teclado para mover a div</p>
+  <div id="drop2" style="display: none;">
+    <div class="areamaxima">
+  	<div id="quadrado" style="width: 10vh; height: 7vw; background-color: blue; position: absolute;">
+    </div>
   </div>
 </div>
 <div class="fatorial">
-  <p style="bottom: 41%; position: absolute;">Valor Fatorial</p>
+  <p style="bottom: 41%; position: absolute; right: 45%; font-size: 3vh; cursor: pointer;">Valor Fatorial</p>
       <input type="number" id="barrafatorial" class="barrafatorial">
       <input type="submit" value="enviar" onclick="fatorial()" class="botaofatorial">
   </div>

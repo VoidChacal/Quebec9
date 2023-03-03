@@ -1,11 +1,11 @@
 .barrafatorial{
 	left: 45%;
     position: absolute;
-
 }
 .botaofatorial{
 	left: 57vw;
     position: absolute;
+    cursor: pointer;
 }
 .fatorial{
 	align-items: all;

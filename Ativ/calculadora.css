@@ -1,7 +1,7 @@
 .calculadora{
   position: absolute;
   background-color: black;
-  top: 22%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%,-50%);
   border-radius: 15px;

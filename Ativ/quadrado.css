@@ -1,9 +1,10 @@
-.quadrado{
+#quadrado{
 	width: 13vh;
 	height: 10vw;
 	background-color: blue;
 	position: absolute;
 	display: flex;
+	top: 73%;
 
 }
 
@@ -15,9 +16,32 @@
 	background-color: white;
 	margin-top: 60vh;
 	overflow: hidden;
-	display: none;
+	display: flex;
+	top:30%;
 }
 .botaoquadrado{
 	top: 13%;
     position: absolute;
+    font-size: 3vh;
+    cursor: pointer;
+}
+#quadrado2{
+	top:64%;
+	position: absolute;
+	font-size: 3vh;
+}
+.quadtext{
+	top:68%;
+	display: flex;
+	position: absolute;
+}
+.areamaxima{
+	height: 23vw;
+	width: 70vh;
+	position: absolute;
+	background-color: white;
+	margin-top: 60vh;
+	overflow: hidden;
+	display: flex;
+	top:12%;
 }

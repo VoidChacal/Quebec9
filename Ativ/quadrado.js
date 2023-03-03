@@ -19,3 +19,18 @@ var x = 0;
  			document.getElementById("quadrado").style.top=y+"px"
  		}
  	})
+
+ 	function dropquadrado(bt, id, fun){
+    var res = 0;
+    let drop = document.querySelector(id);
+    if(fun==0){
+        res=1;
+        drop.style.display = 'contents';
+    }else{
+        drop.style.display = 'none';
+    };
+    let onclick = "dropquadrado(this,'"+id+"',"+res+")";
+
+    bt.setAttribute('onclick', onclick);
+}
+ 	

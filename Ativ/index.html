@@ -6,17 +6,19 @@
 	<title>10 Exercícios de TPA em Javascript</title>
 	 <link rel="stylesheet" type="text/css" href="vars.css">
 	 <link rel="stylesheet" type="text/css" href="calculadora.css">
-	 <script src="quadrado.js"></script>
-     <script src="calculadora.js"></script>
-     <script src="fatorial.js"></script>
+	 <script src="quadrado.js" defer></script>
+     <script src="calculadora.js" defer></script>
+     <script src="fatorial.js" defer></script>
+     <script src="ToDolist.js" defer></script>
     <link rel="stylesheet" type="text/css" href="fatorial.css">
+    <link rel="stylesheet" type="text/css" href="ToDolist.css">
 	 <link rel="stylesheet" type="text/css" href="quadrado.css">
    <style type="text/css">
      .cabeca{
       background-color: #836FFF;
       bottom: 89%;
       height: 11vh;
-      width: 100%;
+      width: 150%;
       position: absolute;
       justify-content: center;
       align-items: center;
@@ -61,9 +63,7 @@
   <table> 
 
   <tr>
-  <td><button class="botao2" onclick="clean()">
-  C
-  </button>
+  <td><button class="botao2" onclick="clean()">C</button>
   </td>
   </tr>
 
@@ -99,6 +99,8 @@
   </table>
   </div>
   </div>
+
+
   <a style="display: flex;" id="quadrado2" onclick="dropquadrado(this,'#drop2',0)">Mover Div</a>
   <p class="quadtext">Use as setas do teclado para mover a div</p>
   <div id="drop2" style="display: none;">
@@ -107,10 +109,28 @@
     </div>
   </div>
 </div>
+
+
 <div class="fatorial">
   <p style="bottom: 41%; position: absolute; right: 45%; font-size: 3vh; cursor: pointer;">Valor Fatorial</p>
       <input type="number" id="barrafatorial" class="barrafatorial">
       <input type="submit" value="enviar" onclick="fatorial()" class="botaofatorial">
+  </div>
+
+
+  <h1 style="top: 121%; position:absolute;">To Do list</h1>
+  <div class="content">
+    <div class="content--add-item">
+      <input type="text" id="todotext" placeholder="Digite sua tarefa">
+      <button id="todobutton" onclick="newTask()" title="Clique para adicionar nova tesk">
+        +
+      </button>
+    </div>
+    <div class="content--body">
+      <ol id="todolist">
+        
+      </ol>
+    </div>
   </div>
 </div>
 

@@ -1,0 +1,55 @@
+.content{
+	position: absolute;
+	top: 126%;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+.content--add-item{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+.content--body{
+
+}
+#todobutton,
+#todotext{
+	border: none;
+	font-size: 1rem;
+	outline: none;
+	padding: 1rem;
+}
+
+#todotext{
+	width: 20rem;
+	border-radius: 1rem;
+
+}
+
+#todobutton{
+	background-color: black;
+	color:  white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+#todolist{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 0;
+}
+
+#todolist li{
+	list-style-type: none;
+	font-size: 1.4rem;
+	text-transform: capitalize;
+	display: flex;
+	justify-content: space-between;
+}
+#btn-ok{
+	boder:none;
+}
